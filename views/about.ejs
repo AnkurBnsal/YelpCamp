@@ -1,0 +1,44 @@
+<%- include("partials/header") %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"> </div>
+		<div class="col col-md-8">
+			<div class="About Shadow">
+				
+				<h1 class="text-center">About YelpCamp</h1>
+				<h3>What is YelpCamp?</h3>
+				<hr>
+				<p>
+					<strong>YelpCamp</strong> is a campground reviewing website. Users can create their own campgrounds or review others' campgrounds. To get started, simply
+					<a href="/register">sign up</a>.
+				</p>
+				<p>
+					YelpCamp is created using Node.js, Express, and MongoDB.
+				</p>
+				<br>
+				<h3>Features</h3>
+				<hr>
+				<ul>
+					<li>Authentication:</li>
+					<ul>
+						<li>User signup with username and password</li>
+						<li>User login with username and password</li>
+						<li>Admin login with admin username and password</li>
+					</ul><br>
+					<li>Authorization:</li>
+					<ul>
+						<li>One cannot create new posts or view user profile without being authenticated</li>
+						<li>One cannot edit or delete existing posts and comments created by other users</li>
+						<li>Admin can manage all posts and comments</li>
+					</ul><br>
+					<li>Flash messages responding to users’ interaction with the app</li><br>
+					<li>Responsive web design</li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+</div>
+
+<%- include("partials/footer") %>
